@@ -12,54 +12,54 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.juaracoding.cucumber6.drivers.DriverSingleton;
 
-public class AdultTraveller2 {
+public class AdultTraveller1 {
 	WebDriver driver;
 
-	public AdultTraveller2() {
+	public AdultTraveller1() {
 		this.driver = DriverSingleton.getDriver();
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(2) > div.card-body > div:nth-child(1) > div.col-md-2 > select")
+	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(1) > div.col-md-2 > select")
 	WebElement title;
 
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(2) > div.card-body > div:nth-child(1) > div.col-md-4 > input")
+	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(1) > div.col-md-4 > input")
 	WebElement firstName;
 
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(2) > div.card-body > div:nth-child(1) > div.col-md-6 > input")
+	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(1) > div.col-md-6 > input")
 	WebElement lastName;
 
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(2) > div.card-body > div:nth-child(2) > div:nth-child(1) > select")
+	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(2) > div:nth-child(1) > select")
 	WebElement nationality;
 
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(2) > div.card-body > div:nth-child(2) > div:nth-child(2) > div > div.col-5 > select")
+	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(2) > div:nth-child(2) > div > div.col-5 > select")
 	WebElement DBmonth;
 
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(2) > div.card-body > div:nth-child(2) > div:nth-child(2) > div > div.col-3 > select")
+	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(2) > div:nth-child(2) > div > div.col-3 > select")
 	WebElement DBday;
 
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(2) > div.card-body > div:nth-child(2) > div:nth-child(2) > div > div.col-4 > select")
+	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(2) > div:nth-child(2) > div > div.col-4 > select")
 	WebElement DByear;
 
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(2) > div.card-body > div:nth-child(4) > div.col-md-12 > input")
+	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(4) > div.col-md-12 > input")
 	WebElement passport;
 
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(2) > div.card-body > div:nth-child(4) > div:nth-child(2) > div > div.col-5 > select")
+	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(4) > div:nth-child(2) > div > div.col-5 > select")
 	WebElement PIDMonth;
 
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(2) > div.card-body > div:nth-child(4) > div:nth-child(2) > div > div.col-3 > select")
+	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(4) > div:nth-child(2) > div > div.col-3 > select")
 	WebElement PIDDay;
 
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(2) > div.card-body > div:nth-child(4) > div:nth-child(2) > div > div.col-4 > select")
+	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(4) > div:nth-child(2) > div > div.col-4 > select")
 	WebElement PIDYear;
 
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(2) > div.card-body > div:nth-child(4) > div:nth-child(3) > div > div.col-5 > select")
+	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(4) > div:nth-child(3) > div > div.col-5 > select")
 	WebElement PEDMonth;
 
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(2) > div.card-body > div:nth-child(4) > div:nth-child(3) > div > div.col-3 > select")
+	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(4) > div:nth-child(3) > div > div.col-3 > select")
 	WebElement PEDDay;
 
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(2) > div.card-body > div:nth-child(4) > div:nth-child(3) > div > div.col-4 > select")
+	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(4) > div:nth-child(3) > div > div.col-4 > select")
 	WebElement PEDYear;
 
 	public void selectDBMonth(int pilih) {
@@ -194,7 +194,7 @@ public class AdultTraveller2 {
 		keyDown.sendKeys(Keys.chord(cs)).perform();
 	}
 
-	public void inputDataAdult2() {
+	public void inputDataAdult1() {
 		selectTitle(2);
 		firstName.sendKeys("test");
 		lastName.sendKeys("aja");

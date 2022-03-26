@@ -15,6 +15,10 @@ import com.juaracoding.cucumber6.drivers.DriverSingleton;
 
 public class FlightsBookingPage {
 	WebDriver driver;
+	AdultTraveller1 adultTraveller1 = new AdultTraveller1();
+	AdultTraveller2 adultTraveller2 = new AdultTraveller2();
+	ChildsTraveller3 childsTraveller3 = new ChildsTraveller3();
+	InfantsTraveller4 infantsTraveller4 = new InfantsTraveller4();
 
 	public FlightsBookingPage() {
 		this.driver = DriverSingleton.getDriver();
@@ -66,56 +70,11 @@ public class FlightsBookingPage {
 	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div:nth-child(1) > div.card-body > div:nth-child(6) > div.col-md-4 > select")
 	WebElement nationality;
 
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(2) > div:nth-child(1) > select")
-	WebElement nationality2;
-
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(1) > div.col-md-2 > select")
-	WebElement title;
-
 	@FindBy(css = "#fadein > section > div > div > div > div > div.form-box.payment-received-wrap.mb-0 > div.form-title-wrap > h3 > span > strong")
 	WebElement textReservation;
 
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(1) > div.col-md-4 > input")
-	WebElement firstName;
-
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(1) > div.col-md-6 > input")
-	WebElement lastName;
-
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(2) > div:nth-child(2) > div > div.col-5 > select")
-	WebElement DBmonth;
-
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(2) > div:nth-child(2) > div > div.col-3 > select")
-	WebElement DBday;
-
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(2) > div:nth-child(2) > div > div.col-4 > select")
-	WebElement DByear;
-
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(4) > div.col-md-12 > input")
-	WebElement passport;
-
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(4) > div:nth-child(2) > div > div.col-5 > select")
-	WebElement PIDMonth;
-
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(4) > div:nth-child(2) > div > div.col-3 > select")
-	WebElement PIDDay;
-
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(4) > div:nth-child(2) > div > div.col-4 > select")
-	WebElement PIDYear;
-
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(4) > div:nth-child(3) > div > div.col-5 > select")
-	WebElement PEDMonth;
-
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(4) > div:nth-child(3) > div > div.col-3 > select")
-	WebElement PEDDay;
-
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div.form-box.payment-received-wrap.mb-2 > div.card-body > div:nth-child(1) > div.card-body > div:nth-child(4) > div:nth-child(3) > div > div.col-4 > select")
-	WebElement PEDYear;
-
-	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div:nth-child(3) > div.form-title-wrap > h3")
-	WebElement textPaymentMethod;
-
-	@FindBy(css = "#myTab > div.col-md-4.mb-1.gateway_setmpos > div")
-	WebElement payWithSetmpos;
+	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div:nth-child(4) > div > div > div > label")
+	WebElement labelAgree;
 
 	@FindBy(id = "gateway_pay-later")
 	WebElement payLater;
@@ -158,114 +117,6 @@ public class FlightsBookingPage {
 		keyDown.sendKeys(Keys.chord(cs)).perform();
 	}
 
-	public void selectDBMonth(int pilih) {
-		DBmonth.click();
-		List<Keys> listState = new ArrayList<Keys>();
-		for (int i = 0; i < pilih; i++) {
-			listState.add(Keys.DOWN);
-		}
-		listState.add(Keys.ENTER);
-		CharSequence[] cs = listState.toArray(new CharSequence[listState.size()]);
-		Actions keyDown = new Actions(driver);
-		keyDown.sendKeys(Keys.chord(cs)).perform();
-	}
-
-	public void selectDBYear(int pilih) {
-		DByear.click();
-		List<Keys> listState = new ArrayList<Keys>();
-		for (int i = 0; i < pilih; i++) {
-			listState.add(Keys.DOWN);
-		}
-		listState.add(Keys.ENTER);
-		CharSequence[] cs = listState.toArray(new CharSequence[listState.size()]);
-		Actions keyDown = new Actions(driver);
-		keyDown.sendKeys(Keys.chord(cs)).perform();
-	}
-
-	public void selectDBDay(int pilih) {
-		DBday.click();
-		List<Keys> listState = new ArrayList<Keys>();
-		for (int i = 0; i < pilih; i++) {
-			listState.add(Keys.DOWN);
-		}
-		listState.add(Keys.ENTER);
-		CharSequence[] cs = listState.toArray(new CharSequence[listState.size()]);
-		Actions keyDown = new Actions(driver);
-		keyDown.sendKeys(Keys.chord(cs)).perform();
-	}
-
-	public void selectPIDMonth(int pilih) {
-		PIDMonth.click();
-		List<Keys> listState = new ArrayList<Keys>();
-		for (int i = 0; i < pilih; i++) {
-			listState.add(Keys.DOWN);
-		}
-		listState.add(Keys.ENTER);
-		CharSequence[] cs = listState.toArray(new CharSequence[listState.size()]);
-		Actions keyDown = new Actions(driver);
-		keyDown.sendKeys(Keys.chord(cs)).perform();
-	}
-
-	public void selectPIDDay(int pilih) {
-		PIDDay.click();
-		List<Keys> listState = new ArrayList<Keys>();
-		for (int i = 0; i < pilih; i++) {
-			listState.add(Keys.DOWN);
-		}
-		listState.add(Keys.ENTER);
-		CharSequence[] cs = listState.toArray(new CharSequence[listState.size()]);
-		Actions keyDown = new Actions(driver);
-		keyDown.sendKeys(Keys.chord(cs)).perform();
-	}
-
-	public void selectPIDYear(int pilih) {
-		PIDYear.click();
-		List<Keys> listState = new ArrayList<Keys>();
-		for (int i = 0; i < pilih; i++) {
-			listState.add(Keys.DOWN);
-		}
-		listState.add(Keys.ENTER);
-		CharSequence[] cs = listState.toArray(new CharSequence[listState.size()]);
-		Actions keyDown = new Actions(driver);
-		keyDown.sendKeys(Keys.chord(cs)).perform();
-	}
-
-	public void selectPEDMonth(int pilih) {
-		PEDMonth.click();
-		List<Keys> listState = new ArrayList<Keys>();
-		for (int i = 0; i < pilih; i++) {
-			listState.add(Keys.DOWN);
-		}
-		listState.add(Keys.ENTER);
-		CharSequence[] cs = listState.toArray(new CharSequence[listState.size()]);
-		Actions keyDown = new Actions(driver);
-		keyDown.sendKeys(Keys.chord(cs)).perform();
-	}
-
-	public void selectPEDDay(int pilih) {
-		PEDDay.click();
-		List<Keys> listState = new ArrayList<Keys>();
-		for (int i = 0; i < pilih; i++) {
-			listState.add(Keys.DOWN);
-		}
-		listState.add(Keys.ENTER);
-		CharSequence[] cs = listState.toArray(new CharSequence[listState.size()]);
-		Actions keyDown = new Actions(driver);
-		keyDown.sendKeys(Keys.chord(cs)).perform();
-	}
-
-	public void selectPEDYear(int pilih) {
-		PEDYear.click();
-		List<Keys> listState = new ArrayList<Keys>();
-		for (int i = 0; i < pilih; i++) {
-			listState.add(Keys.DOWN);
-		}
-		listState.add(Keys.ENTER);
-		CharSequence[] cs = listState.toArray(new CharSequence[listState.size()]);
-		Actions keyDown = new Actions(driver);
-		keyDown.sendKeys(Keys.chord(cs)).perform();
-	}
-
 	public void selectNationality(int pilih) {
 		nationality.click();
 		List<Keys> listState = new ArrayList<Keys>();
@@ -278,33 +129,9 @@ public class FlightsBookingPage {
 		keyDown.sendKeys(Keys.chord(cs)).perform();
 	}
 
-	public void selectNationality2(int pilih) {
-		nationality2.click();
-		List<Keys> listState = new ArrayList<Keys>();
-		for (int i = 0; i < pilih; i++) {
-			listState.add(Keys.DOWN);
-		}
-		listState.add(Keys.ENTER);
-		CharSequence[] cs = listState.toArray(new CharSequence[listState.size()]);
-		Actions keyDown = new Actions(driver);
-		keyDown.sendKeys(Keys.chord(cs)).perform();
-	}
-
-	public void selectTitle(int pilih) {
-		title.click();
-		List<Keys> listState = new ArrayList<Keys>();
-		for (int i = 0; i < pilih; i++) {
-			listState.add(Keys.DOWN);
-		}
-		listState.add(Keys.ENTER);
-		CharSequence[] cs = listState.toArray(new CharSequence[listState.size()]);
-		Actions keyDown = new Actions(driver);
-		keyDown.sendKeys(Keys.chord(cs)).perform();
-	}
-
 	public void selectPassengers() {
 		passengers.click();
-		increaseAdults.click();
+//		increaseAdults.click();
 		increaseChilds.click();
 		increaseInfants.click();
 	}
@@ -329,23 +156,18 @@ public class FlightsBookingPage {
 		selectNationality(2);
 		JavascriptExecutor je = (JavascriptExecutor) driver;
 		je.executeScript("window.scrollBy(0, 500)");
-		selectTitle(2);
-		firstName.sendKeys("test");
-		lastName.sendKeys("aja");
-		selectNationality2(4);
-		selectDBMonth(4);
-		selectDBDay(10);
-		selectDBYear(12);
-		passport.sendKeys("123456789");
-		selectPIDMonth(3);
-		selectPIDDay(4);
-		selectPIDYear(5);
-		selectPEDMonth(6);
-		selectPEDDay(7);
-		selectPEDYear(8);
-//		je.executeScript("window.scrollBy(0, 500)");
+		adultTraveller1.inputDataAdult1();
+		je.executeScript("window.scrollBy(0, 500)");
+		adultTraveller2.inputDataAdult2();
+		je.executeScript("window.scrollBy(0, 500)");
+		childsTraveller3.inputDataChild3();
+		je.executeScript("window.scrollBy(0, 250)");
+		infantsTraveller4.inputDataInfants4();
+		je.executeScript("window.scrollBy(0, 500)");
 //		je.executeScript("arguments[0].scrollIntoView();", payLater);
 		payLater.click();
+//		je.executeScript("arguments[0].scrollIntoView();", labelAgree);
+//		je.executeScript("window.scrollBy(0, 250)");
 		agree.click();
 		btnConfirm.click();
 	}
