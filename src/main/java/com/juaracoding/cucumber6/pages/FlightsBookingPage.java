@@ -79,7 +79,7 @@ public class FlightsBookingPage {
 	@FindBy(id = "gateway_pay-later")
 	WebElement payLater;
 
-	@FindBy(id = "agreechb")
+	@FindBy(css = "#fadein > div.booking_data > form > section > div > div > div.col-lg-8 > div:nth-child(4) > div > div > div")
 	WebElement agree;
 
 	@FindBy(id = "booking")
@@ -131,7 +131,7 @@ public class FlightsBookingPage {
 
 	public void selectPassengers() {
 		passengers.click();
-//		increaseAdults.click();
+		increaseAdults.click();
 		increaseChilds.click();
 		increaseInfants.click();
 	}
@@ -161,13 +161,13 @@ public class FlightsBookingPage {
 		adultTraveller2.inputDataAdult2();
 		je.executeScript("window.scrollBy(0, 500)");
 		childsTraveller3.inputDataChild3();
-		je.executeScript("window.scrollBy(0, 250)");
+		je.executeScript("window.scrollBy(0, 500)");
 		infantsTraveller4.inputDataInfants4();
 		je.executeScript("window.scrollBy(0, 500)");
 //		je.executeScript("arguments[0].scrollIntoView();", payLater);
 		payLater.click();
 //		je.executeScript("arguments[0].scrollIntoView();", labelAgree);
-		je.executeScript("window.scrollBy(0, 500)");
+		je.executeScript("window.scrollBy(0, 250)");
 		agree.click();
 		btnConfirm.click();
 	}
