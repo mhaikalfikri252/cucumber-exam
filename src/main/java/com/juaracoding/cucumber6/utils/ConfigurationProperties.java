@@ -29,6 +29,13 @@ public class ConfigurationProperties {
 	@Value("${titleFlightsBooking}")
 	private String titleFlightsBooking;
 
+	@Value("${textReservation}")
+	private String textReservation;
+
+	public String getTextReservation() {
+		return textReservation;
+	}
+
 	public String getBrowser() {
 		return browser;
 	}

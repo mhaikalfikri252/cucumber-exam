@@ -26,10 +26,10 @@ public class HotelsBookingPage {
 	@FindBy(css = "#hotels-search > div > div > div.col-md-4 > div > div > div > span > span.selection > span")
 	WebElement city;
 
-	@FindBy(id = "checkin")
+	@FindBy(css = "#checkin")
 	WebElement checkIn;
 
-	@FindBy(id = "checkout")
+	@FindBy(css = "#checkout")
 	WebElement checkOut;
 
 	@FindBy(css = "#hotels-search > div > div > div:nth-child(3) > div > div > div > a")
@@ -51,8 +51,10 @@ public class HotelsBookingPage {
 	WebElement titleHotelsBooking;
 
 	public void selectCity(String subject) {
+		city.click();
 		city.sendKeys(subject);
-		city.sendKeys(Keys.RETURN);
+		city.sendKeys(Keys.DOWN);
+		city.sendKeys(Keys.ENTER);
 	}
 
 	public void selectCheckIn(String date) {
@@ -102,8 +104,8 @@ public class HotelsBookingPage {
 
 	public void inputHotelsBooking() {
 		selectCity("Aceh");
-//		selectCheckIn("30 March 2022");
-//		selectCheckOut("31 March 2022");
+		selectCheckIn("30 March 2022");
+		selectCheckOut("31 March 2022");
 //		selectTravellers();
 		btnSearch.click();
 	}
