@@ -167,7 +167,7 @@ public class FlightsBookingPage {
 //		je.executeScript("arguments[0].scrollIntoView();", payLater);
 		payLater.click();
 //		je.executeScript("arguments[0].scrollIntoView();", labelAgree);
-//		je.executeScript("window.scrollBy(0, 250)");
+		je.executeScript("window.scrollBy(0, 500)");
 		agree.click();
 		btnConfirm.click();
 	}
