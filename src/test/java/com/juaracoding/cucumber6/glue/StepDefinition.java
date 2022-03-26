@@ -87,15 +87,21 @@ public class StepDefinition {
 		flightsBookingPage.goToMenuFlights();
 	}
 
-	@And("Customer mengisi data flights booking")
-	public void customer_mengisi_data_flights_booking() {
-		flightsBookingPage.inputFlightsBooking();
+	@And("Customer mengisi tujuan flights")
+	public void customer_mengisi_tujuan_flights() {
+		flightsBookingPage.inputTujuanFlights();
 		tunggu();
 	}
 
-	@Then("Customer ditampilkan pilihan flights")
-	public void customer_ditampilkan_pilihan_flights() {
-		assertEquals(configurationProperties.getTitleFlightsBooking(), flightsBookingPage.getTitleFlightsBookingPage());
+	@And("Customer mengisi data diri")
+	public void customer_mengisi_data_diri() {
+		flightsBookingPage.inputDataDiri();
+		tunggu();
+	}
+
+	@Then("Customer ditampilkan booking_invoice")
+	public void customer_ditampilkan_booking_invoice() {
+		assertEquals(configurationProperties.getTextReservation(), flightsBookingPage.getTextReservation());
 	}
 
 	public static void tunggu() {
